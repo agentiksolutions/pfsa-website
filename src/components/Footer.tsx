@@ -1,6 +1,6 @@
 import { Heart } from 'lucide-react'
 
-const QUICK_LINKS = [
+const QUICK_LINKS: { label: string; href: string; external?: boolean }[] = [
   { label: 'About', href: '#about' },
   { label: 'Programs', href: '#programs' },
   { label: 'Impact', href: '#impact' },

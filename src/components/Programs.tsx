@@ -1,7 +1,7 @@
 import { HeartHandshake, LifeBuoy, Building } from 'lucide-react'
 import { ScrollAnimation } from './ScrollAnimation'
 
-const PROGRAMS = [
+const PROGRAMS: { icon: typeof HeartHandshake; title: string; description: string; cta?: { label: string; href: string } }[] = [
   {
     icon: HeartHandshake,
     title: 'Hands of Hope',

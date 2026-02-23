@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Heart } from 'lucide-react'
 
-const NAV_LINKS = [
+const NAV_LINKS: { label: string; href: string; external?: boolean }[] = [
   { label: 'About', href: '#about' },
   { label: 'Programs', href: '#programs' },
   { label: 'Impact', href: '#impact' },
