@@ -7,7 +7,6 @@ const PROGRAMS = [
     title: 'Hands of Hope',
     description:
       'Direct financial assistance to individuals and families for utilities, food, transportation, medical needs, and essential living expenses. We believe no one should face hardship alone.',
-    cta: { label: 'Apply for Assistance', href: 'https://apply.thepfsa.org' },
   },
   {
     icon: LifeBuoy,

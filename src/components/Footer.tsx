@@ -5,7 +5,6 @@ const QUICK_LINKS = [
   { label: 'Programs', href: '#programs' },
   { label: 'Impact', href: '#impact' },
   { label: 'Donate', href: '#donate' },
-  { label: 'Apply for Help', href: 'https://apply.thepfsa.org', external: true },
   { label: 'Contact', href: '#contact' },
 ]
 

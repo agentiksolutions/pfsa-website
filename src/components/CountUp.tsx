@@ -5,9 +5,10 @@ interface CountUpProps {
   prefix?: string
   suffix?: string
   duration?: number
+  decimals?: number
 }
 
-export function CountUp({ end, prefix = '', suffix = '', duration = 2000 }: CountUpProps) {
+export function CountUp({ end, prefix = '', suffix = '', duration = 2000, decimals = 0 }: CountUpProps) {
   const [count, setCount] = useState(0)
   const ref = useRef<HTMLSpanElement>(null)
   const hasAnimated = useRef(false)
@@ -26,7 +27,8 @@ export function CountUp({ end, prefix = '', suffix = '', duration = 2000 }: Coun
             const elapsed = now - startTime
             const progress = Math.min(elapsed / duration, 1)
             const eased = 1 - Math.pow(1 - progress, 3)
-            setCount(Math.floor(eased * end))
+            const value = eased * end
+            setCount(decimals > 0 ? parseFloat(value.toFixed(decimals)) : Math.floor(value))
 
             if (progress < 1) {
               requestAnimationFrame(animate)
@@ -48,7 +50,7 @@ export function CountUp({ end, prefix = '', suffix = '', duration = 2000 }: Coun
 
   return (
     <span ref={ref}>
-      {prefix}{count.toLocaleString()}{suffix}
+      {prefix}{decimals > 0 ? count.toFixed(decimals) : count.toLocaleString()}{suffix}
     </span>
   )
 }

@@ -3,9 +3,9 @@ import { CountUp } from './CountUp'
 
 const STATS = [
   { end: 20, suffix: '+', label: 'Years of Service' },
-  { end: 13000, prefix: '$', suffix: '+', label: 'Raised in 2025–2026' },
-  { end: 254, suffix: '', label: 'Meals Provided' },
-  { end: 12, suffix: '+', label: 'Community Partners' },
+  { end: 1.7, prefix: '$', suffix: 'M+', label: 'Distributed to Communities', decimals: 1 },
+  { end: 13, suffix: '', label: 'Programs & Organizations Funded' },
+  { end: 5, suffix: '', label: 'Stewards of Hope' },
 ]
 
 export function Impact() {
@@ -27,6 +27,7 @@ export function Impact() {
                     end={stat.end}
                     prefix={stat.prefix}
                     suffix={stat.suffix}
+                    decimals={stat.decimals}
                   />
                 </div>
                 <p className="mt-3 text-lg font-medium text-pfsa-blue">{stat.label}</p>

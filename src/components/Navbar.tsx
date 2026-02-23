@@ -5,7 +5,6 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Programs', href: '#programs' },
   { label: 'Impact', href: '#impact' },
-  { label: 'Need Help?', href: 'https://apply.thepfsa.org', external: true },
   { label: 'Donate', href: '#donate' },
   { label: 'Contact', href: '#contact' },
 ]
