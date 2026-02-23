@@ -1,8 +1,13 @@
-import { CreditCard, Smartphone, Mail, Landmark, HandCoins, CalendarHeart } from 'lucide-react'
+import { Smartphone, CreditCard, Landmark, Mail, HandCoins, CalendarHeart } from 'lucide-react'
 import { ScrollAnimation } from './ScrollAnimation'
+// import { DonationForm } from './DonationForm'  // Uncomment when Stripe is configured
 
 const GIVE_LIVELY_URL =
   'https://secure.givelively.org/donate/the-public-foundation-for-stewardship-advancement-inc'
+
+// TODO: When Stripe account is ready, set env vars in Vercel and swap the
+// Primary CTA section below from Give Lively → DonationForm. See commented
+// block in the JSX.
 
 const OTHER_WAYS = [
   {
@@ -62,7 +67,7 @@ export function Donate() {
           </p>
         </ScrollAnimation>
 
-        {/* Primary CTA */}
+        {/* Primary CTA — Give Lively (swap to Stripe DonationForm when ready) */}
         <ScrollAnimation delay={150}>
           <div className="mx-auto mt-12 max-w-xl rounded-2xl border-2 border-pfsa-gold/30 bg-white p-10 text-center shadow-xl">
             <h3 className="font-heading text-3xl font-bold text-pfsa-blue">Donate Online</h3>
@@ -84,6 +89,23 @@ export function Donate() {
             </p>
           </div>
         </ScrollAnimation>
+
+        {/*
+        — STRIPE DONATION FORM (uncomment when Stripe account is configured) —
+        <ScrollAnimation delay={150}>
+          <div className="mx-auto mt-12 max-w-xl rounded-2xl border-2 border-pfsa-gold/30 bg-white p-10 shadow-xl">
+            <h3 className="font-heading text-center text-3xl font-bold text-pfsa-blue">
+              Donate Online
+            </h3>
+            <p className="mt-3 text-center text-gray-600">
+              Secure online giving powered by Stripe
+            </p>
+            <div className="mt-6">
+              <DonationForm />
+            </div>
+          </div>
+        </ScrollAnimation>
+        */}
 
         {/* Other Ways to Give */}
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
