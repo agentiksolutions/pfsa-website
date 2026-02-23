@@ -3,6 +3,8 @@
 ## What This Project Is
 The public-facing website for The Public Foundation for Stewardship Advancement, Inc. (PFSA) — a 501(c)(3) nonprofit based in Lexington, KY. This is the informational site at www.thepfsa.org, separate from the donor management app at app.thepfsa.org. Single-commit complete build.
 
+Also read ~/Documents/Philip-Brain/PHIL-OPERATOR-PROFILE.md for operating rules and communication style.
+
 ## Tech Stack & Location
 - **Stack:** React 19 + Vite 7 + TypeScript + Tailwind CSS 4 + Lucide React
 - **Local path:** E:\pfsa-website\

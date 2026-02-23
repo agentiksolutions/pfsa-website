@@ -10,6 +10,7 @@ const OTHER_WAYS = [
     title: 'Venmo',
     detail: '@ThePFSA',
     description: 'Send via Venmo app',
+    qr: '/venmo-qr.jpg',
   },
   {
     icon: CreditCard,
@@ -22,6 +23,7 @@ const OTHER_WAYS = [
     title: 'PayPal',
     detail: 'Scan QR code or click to donate',
     description: 'Secure PayPal payment',
+    qr: '/paypal-qr.png',
   },
   {
     icon: Mail,
@@ -95,7 +97,15 @@ export function Donate() {
                   </h4>
                 </div>
                 <p className="mt-3 font-semibold text-pfsa-green">{way.detail}</p>
-                <p className="mt-1 flex-1 text-sm text-gray-500">{way.description}</p>
+                <p className="mt-1 text-sm text-gray-500">{way.description}</p>
+                {way.qr && (
+                  <img
+                    src={way.qr}
+                    alt={`${way.title} QR code`}
+                    className="mt-4 mx-auto w-44 rounded-lg object-contain"
+                  />
+                )}
+                <div className="flex-1" />
                 {way.link && (
                   <a
                     href={way.link}

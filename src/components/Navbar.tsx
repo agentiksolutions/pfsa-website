@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Programs', href: '#programs' },
   { label: 'Impact', href: '#impact' },
+  { label: 'Need Help?', href: 'https://apply.thepfsa.org', external: true },
   { label: 'Donate', href: '#donate' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -45,7 +46,12 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium tracking-wide text-white/80 transition-colors hover:text-pfsa-gold no-underline"
+                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                className={`text-sm font-medium tracking-wide transition-colors no-underline ${
+                  link.external
+                    ? 'text-pfsa-gold hover:text-white'
+                    : 'text-white/80 hover:text-pfsa-gold'
+                }`}
               >
                 {link.label}
               </a>
@@ -101,7 +107,12 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={handleLinkClick}
-                className="rounded-lg px-4 py-3 text-lg font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-pfsa-gold no-underline"
+                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                className={`rounded-lg px-4 py-3 text-lg font-medium transition-colors hover:bg-white/10 no-underline ${
+                  link.external
+                    ? 'text-pfsa-gold hover:text-white'
+                    : 'text-white/90 hover:text-pfsa-gold'
+                }`}
               >
                 {link.label}
               </a>

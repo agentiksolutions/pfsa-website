@@ -7,6 +7,7 @@ const PROGRAMS = [
     title: 'Hands of Hope',
     description:
       'Direct financial assistance to individuals and families for utilities, food, transportation, medical needs, and essential living expenses. We believe no one should face hardship alone.',
+    cta: { label: 'Apply for Assistance', href: 'https://apply.thepfsa.org' },
   },
   {
     icon: LifeBuoy,
@@ -48,6 +49,16 @@ export function Programs() {
                 <p className="mt-4 flex-1 leading-relaxed text-gray-600">
                   {program.description}
                 </p>
+                {program.cta && (
+                  <a
+                    href={program.cta.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block rounded-full bg-pfsa-green px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-pfsa-green/90 hover:shadow-md no-underline"
+                  >
+                    {program.cta.label}
+                  </a>
+                )}
               </div>
             </ScrollAnimation>
           ))}
