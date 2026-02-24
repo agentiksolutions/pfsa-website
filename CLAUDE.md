@@ -25,15 +25,15 @@ Also read ~/Documents/Philip-Brain/PHIL-OPERATOR-PROFILE.md for operating rules 
 
 ## What's Next
 - [ ] Content updates as needed
-- [ ] Ensure consistency with donor tracker branding
+- [ ] Ensure consistency with PFSA Board Portal branding
 
 ## Key Decisions
-- Separate project from donor tracker — different repo, different Vercel project
+- Separate project from PFSA Board Portal — different repo, different Vercel project
 - Public-facing only — no auth, no database
-- Same brand identity as donor tracker (PFSA brand colors)
+- Same brand identity as PFSA Board Portal (PFSA brand colors)
 
 ## Rules
-- Keep branding consistent with the donor tracker app
+- Keep branding consistent with the PFSA Board Portal app
 - Do not add any auth or database functionality — this is a static informational site
 - Deploy via GitHub push → Vercel auto-deploy
 
