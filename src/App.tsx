@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
@@ -8,8 +9,9 @@ import { Donate } from './components/Donate'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { ThankYouBanner } from './components/ThankYouBanner'
+import { CampaignLanding } from './components/CampaignLanding'
 
-export default function App() {
+function HomePage() {
   const [banner, setBanner] = useState<'success' | 'canceled' | null>(null)
 
   useEffect(() => {
@@ -43,5 +45,14 @@ export default function App() {
       </main>
       <Footer />
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/campaign/:slug" element={<CampaignLanding />} />
+    </Routes>
   )
 }
