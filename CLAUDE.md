@@ -1,13 +1,13 @@
-# PFSA Website
+﻿# PFSA Website
 
 ## What This Project Is
-The public-facing website for The Public Foundation for Stewardship Advancement, Inc. (PFSA) — a 501(c)(3) nonprofit based in Lexington, KY. This is the informational site at www.thepfsa.org, separate from the donor management app at app.thepfsa.org. Single-commit complete build.
+The public-facing website for The Public Foundation for Stewardship Advancement, Inc. (PFSA) â€” a 501(c)(3) nonprofit based in Lexington, KY. This is the informational site at www.thepfsa.org, separate from the donor management app at app.thepfsa.org. Single-commit complete build.
 
-Also read ~/Documents/Philip-Brain/PHIL-OPERATOR-PROFILE.md for operating rules and communication style.
+Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules and communication style.
 
 ## Tech Stack & Location
 - **Stack:** React 19 + Vite 7 + TypeScript + Tailwind CSS 4 + Lucide React
-- **Local path:** E:\pfsa-website\
+- **Local path:** E:\Cortex\pfsa-website\
 - **Live URL:** https://www.thepfsa.org
 - **GitHub:** https://github.com/agentiksolutions/pfsa-website.git
 - **Vercel project:** prj_mPqw2lyrtVE8eCN8FKlptRLoq18h (team: agentiksolutions-projects)
@@ -16,31 +16,31 @@ Also read ~/Documents/Philip-Brain/PHIL-OPERATOR-PROFILE.md for operating rules 
 ## Current State
 - **Live and deployed** at www.thepfsa.org
 - 1 git commit: "PFSA public website - complete build"
-- GitHub remote configured — agentiksolutions/pfsa-website
-- Deploys via GitHub → Vercel
+- GitHub remote configured â€” agentiksolutions/pfsa-website
+- Deploys via GitHub â†’ Vercel
 
 ## Last Session
 **Date:** 2026-02-15
-**What we did:** Created CLAUDE.md. Project moved from C:\Users\Philip Fifield\ to E:\pfsa-website\ on 2026-02-14.
+**What we did:** Created CLAUDE.md. Project moved from C:\Users\Philip Fifield\ to E:\Cortex\pfsa-website\ on 2026-02-14.
 
 ## What's Next
 - [ ] Content updates as needed
 - [ ] Ensure consistency with PFSA Board Portal branding
 
 ## Key Decisions
-- Separate project from PFSA Board Portal — different repo, different Vercel project
-- Public-facing only — no auth, no database
+- Separate project from PFSA Board Portal â€” different repo, different Vercel project
+- Public-facing only â€” no auth, no database
 - Same brand identity as PFSA Board Portal (PFSA brand colors)
 
 ## Rules
 - Keep branding consistent with the PFSA Board Portal app
-- Do not add any auth or database functionality — this is a static informational site
-- Deploy via GitHub push → Vercel auto-deploy
+- Do not add any auth or database functionality â€” this is a static informational site
+- Deploy via GitHub push â†’ Vercel auto-deploy
 
 ## SESSION RULES
 
 ### Session Start
-At the start of every session, create a session log at `~/Documents/Philip-Brain/PFSA/Sessions/YYYY-MM-DD - [brief topic].md` using this format:
+At the start of every session, create a session log at `E:/Cortex/philip-brain/PFSA/Sessions/YYYY-MM-DD - [brief topic].md` using this format:
 
 ```
 ---
@@ -49,7 +49,7 @@ project: PFSA Website
 tags: []
 ---
 
-# Session Log — [date]
+# Session Log â€” [date]
 
 ## What We Worked On
 
@@ -70,5 +70,5 @@ At the end of every session, update this CLAUDE.md:
 2. Update **Current State** if changed
 3. Check off completed **What's Next** items
 4. Add new items discovered during the session
-5. Also update the vault Running Doc at `~/Documents/Philip-Brain/PFSA/PFSA - Running Doc.md`
+5. Also update the vault Running Doc at `E:/Cortex/philip-brain/PFSA/PFSA - Running Doc.md`
 6. Fill in **What We Worked On** and **Decisions Made** in the session log created at session start
