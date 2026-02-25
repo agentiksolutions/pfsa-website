@@ -15,13 +15,12 @@ Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules an
 
 ## Current State
 - **Live and deployed** at www.thepfsa.org
-- 1 git commit: "PFSA public website - complete build"
-- GitHub remote configured â€” agentiksolutions/pfsa-website
-- Deploys via GitHub â†’ Vercel
+- GitHub remote configured — agentiksolutions/pfsa-website
+- Deploys via GitHub push → Vercel auto-deploy
 
 ## Last Session
-**Date:** 2026-02-15
-**What we did:** Created CLAUDE.md. Project moved from C:\Users\Philip Fifield\ to E:\Cortex\pfsa-website\ on 2026-02-14.
+**Date:** 2026-02-25
+**What we did:** Updated CLAUDE.md (corrected stale state info, confirmed Vercel deployment).
 
 ## What's Next
 - [ ] Content updates as needed
