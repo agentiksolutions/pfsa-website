@@ -36,38 +36,19 @@ Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules an
 - Do not add any auth or database functionality â€” this is a static informational site
 - Deploy via GitHub push â†’ Vercel auto-deploy
 
-## SESSION RULES
+## SESSION RULES (Two-Tier)
 
-### Session Start
-At the start of every session, create a session log at `E:/Cortex/philip-brain/PFSA/Sessions/YYYY-MM-DD - [brief topic].md` using this format:
+**Light Session** (< 30 min, single project, no architectural changes):
+1. Update PIPELINE.json if tasks changed
+2. Git commit and push affected repos
 
-```
----
-date: [today's date]
-project: PFSA Website
-tags: []
----
+**Heavy Session** (multi-project, architectural changes, new workflows/agents):
+1. Update PIPELINE.json
+2. Write handoff file to `Maverick/Log/handoffs/YYYY-MM-DD-HHMM-{slug}.md`
+3. Update SESSION-HANDOFF.md
+4. Update this CLAUDE.md if architecture changed
+5. Update Running Doc (E:/Cortex/philip-brain/PFSA/PFSA - Running Doc.md) if project state changed
+6. Append to daily roll-up `_Sessions/YYYY-MM-DD.md`
+7. Git commit and push all affected repos
 
-# Session Log â€” [date]
-
-## What We Worked On
-
-## Decisions Made
-
-## Ideas / Feature Requests
-
-## Bugs / Issues Found
-
-## Questions for Next Session
-
-## Notes
-```
-
-### Session End
-At the end of every session, update this CLAUDE.md:
-1. Update **Last Session** with today's date and work done
-2. Update **Current State** if changed
-3. Check off completed **What's Next** items
-4. Add new items discovered during the session
-5. Also update the vault Running Doc at `E:/Cortex/philip-brain/PFSA/PFSA - Running Doc.md`
-6. Fill in **What We Worked On** and **Decisions Made** in the session log created at session start
+**Rule:** Claude Code self-determines which tier applies. Default to Light unless the session touches multiple projects or changes system architecture.
