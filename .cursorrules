@@ -1,0 +1,17 @@
+You are working on the PFSA public website — the public-facing site for a nonprofit.
+
+Tech: React 19, Vite, Tailwind v4, Supabase, TypeScript, Stripe
+Deploy: Vercel (dev port 3300)
+
+Conventions:
+- Folder naming: lowercase-with-dashes
+- Git branch: always main
+- Commits: descriptive present tense
+- No TODO comments, no console.log in committed code
+- TypeScript strict mode
+- Production-grade code only
+
+Design standard:
+- Bold typography, distinctive colors, motion/animations
+- Never generic AI aesthetics (no Inter font, no purple gradients)
+- Warm, approachable nonprofit branding
