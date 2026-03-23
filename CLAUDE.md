@@ -1,7 +1,7 @@
-﻿# PFSA Website
+# PFSA Website
 
 ## What This Project Is
-The public-facing website for The Public Foundation for Stewardship Advancement, Inc. (PFSA) â€” a 501(c)(3) nonprofit based in Lexington, KY. This is the informational site at www.thepfsa.org, separate from the donor management app at app.thepfsa.org. Single-commit complete build.
+The public-facing website for The Public Foundation for Stewardship Advancement, Inc. (PFSA) — a 501(c)(3) nonprofit based in Lexington, KY. This is the informational site at www.thepfsa.org, separate from the donor management app at app.thepfsa.org. Single-commit complete build.
 
 Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules and communication style.
 
@@ -18,23 +18,12 @@ Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules an
 - GitHub remote configured — agentiksolutions/pfsa-website
 - Deploys via GitHub push → Vercel auto-deploy
 
-## Last Session
-**Date:** 2026-02-25
-**What we did:** Updated CLAUDE.md (corrected stale state info, confirmed Vercel deployment).
-
 ## What's Next
 - [ ] Content updates as needed
 - [ ] Ensure consistency with PFSA Board Portal branding
 
-## Key Decisions
-- Separate project from PFSA Board Portal â€” different repo, different Vercel project
-- Public-facing only â€” no auth, no database
-- Same brand identity as PFSA Board Portal (PFSA brand colors)
-
 ## Rules
-- Keep branding consistent with the PFSA Board Portal app
-- Do not add any auth or database functionality â€” this is a static informational site
-- Deploy via GitHub push â†’ Vercel auto-deploy
+See @.claude/rules/core-rules.md
 
 ## SESSION RULES (Two-Tier)
 
@@ -52,3 +41,5 @@ Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules an
 7. Git commit and push all affected repos
 
 **Rule:** Claude Code self-determines which tier applies. Default to Light unless the session touches multiple projects or changes system architecture.
+
+*Last updated: 2026-03-22 (restructured — rules extracted to .claude/rules/)*
