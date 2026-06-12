@@ -1,0 +1,7 @@
+#!/bin/sh
+# CORTEX Proof-Gate — G1 Vercel build gate.
+# Reproduces Vercel's build locally before push; blocks only on source errors.
+# Canonical logic: E:/Cortex/aigency/scripts/proof-gate/vercel-build-gate.cjs
+# Emergency bypass (use only when you truly mean it): git push --no-verify
+node "E:/Cortex/aigency/scripts/proof-gate/vercel-build-gate.cjs" "$(pwd)"
+exit $?

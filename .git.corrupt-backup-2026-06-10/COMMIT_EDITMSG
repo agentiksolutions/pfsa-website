@@ -1,0 +1,7 @@
+upgrade deps: vite 7.3.5 (dev-server CVEs), react-router-dom 7.17.0, @vercel/node 5.8.14
+
+Same vite advisory as pfsa-donor-tracker (GHSA-4w7w-66w2-5vf9 et al).
+Remaining audit findings are transitive in @vercel/node with no
+non-breaking fix. Full build (tsc -b && vite build) passes.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
