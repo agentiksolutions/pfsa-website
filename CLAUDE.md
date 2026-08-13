@@ -18,10 +18,6 @@ Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules an
 - GitHub remote configured — agentiksolutions/pfsa-website
 - Deploys via GitHub push → Vercel auto-deploy
 
-## What's Next
-- [ ] Content updates as needed
-- [ ] Ensure consistency with PFSA Board Portal branding
-
 ## Commands
 - `npm run dev` — Vite dev server
 - `npm run build` — typecheck + production build (`tsc -b && vite build`)
@@ -30,7 +26,15 @@ Also read E:/Cortex/philip-brain/PHIL-OPERATOR-PROFILE.md for operating rules an
 - Deploy: `git push` to main → Vercel auto-deploy
 
 ## Rules
-See @.claude/rules/core-rules.md
+See `.claude/rules/pfsa-site-constraints.md`.
+
+## Keep out
+This is PFSA's public face on a **separate Graph tenant** from BRG — a BRG credential will not
+work here. Branding must stay consistent with the PFSA Board Portal; check it before changing
+colors, logo or type.
+
+## Open work
+`philip-brain/PIPELINE.json`. One task list, not two.
 
 ## Session Rules
 Two-tier session protocol (Light vs Heavy) lives in the global CLAUDE.md at `~/.claude/CLAUDE.md`. Running Doc for this project: `E:/Cortex/philip-brain/PFSA/PFSA - Running Doc.md`.
