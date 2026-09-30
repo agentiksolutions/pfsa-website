@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, Heart } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const NAV_LINKS: { label: string; href: string; external?: boolean }[] = [
   { label: 'About', href: '#about' },
@@ -33,7 +33,7 @@ export function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 text-white no-underline">
-            <Heart className="h-7 w-7 text-pfsa-gold fill-pfsa-teal" />
+            <img src="/pfsa-logo.png" alt="" className="h-10 w-10 rounded-md" />
             <span className="font-heading text-xl font-bold tracking-wide">
               THE PFSA
             </span>

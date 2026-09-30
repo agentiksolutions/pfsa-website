@@ -56,14 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gold button glow */
 .btn-gold {
-  background: linear-gradient(135deg, #B8860B, #D4A017);
+  background: linear-gradient(135deg, #B8860B, #D4A843);
   color: white;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
 }
 
 .btn-gold:hover {
-  background: linear-gradient(135deg, #D4A017, #B8860B);
+  background: linear-gradient(135deg, #D4A843, #B8860B);
   box-shadow: 0 6px 25px rgba(184, 134, 11, 0.45);
   transform: translateY(-1px);
 }
