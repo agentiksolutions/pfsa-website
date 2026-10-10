@@ -33,6 +33,10 @@ This is PFSA's public face on a **separate Graph tenant** from BRG — a BRG cre
 work here. Branding must stay consistent with the PFSA Board Portal; check it before changing
 colors, logo or type.
 
+## Design
+- Warm, approachable nonprofit branding.
+- No Inter font. No purple gradients.
+
 ## Open work
 `philip-brain/PIPELINE.json`. One task list, not two.
 

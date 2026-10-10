@@ -45,7 +45,6 @@ Each folder has a README that says what goes in, what comes out and what stays o
   it from the project root to restore context after a compaction. It must not move.
 - `DECISION-LOG.md`: the old decision record. New decisions would go in `decisions/`. It
   stays at the root until Phil decides whether to convert it.
-- `.cursorrules`: settings for the Cursor editor. Whether to retire it is Phil's call.
 - `.git.corrupt-backup-2026-06-10/`: a copy of the git folder from the June 2026 repository
   corruption. Unlike in the other PFSA repos, this one is committed: a nightly sync added it
   on 2026-06-12, and this repo's `.gitignore` has no rule for it. Deleting it is Phil's call.
