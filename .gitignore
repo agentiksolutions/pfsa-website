@@ -26,3 +26,7 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# June 2026 git repair copies
+.git.corrupt-backup-*/
+.git-corrupt-*/
