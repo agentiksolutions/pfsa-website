@@ -33,5 +33,14 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.48.0",
     "vite": "^7.3.5"
+  },
+  "overrides": {
+    "@vercel/node": {
+      "undici": "^6.29.1",
+      "path-to-regexp": "6.3.0"
+    },
+    "@vercel/static-config": {
+      "ajv": "^8.20.0"
+    }
   }
 }
