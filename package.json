@@ -43,9 +43,6 @@
     "@vercel/static-config": {
       "ajv": "^8.20.0"
     },
-    "vite": {
-      "esbuild": "^0.28.1"
-    },
     "@vercel/nft": {
       "glob": "^14.0.2"
     }
